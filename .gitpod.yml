@@ -1,4 +1,8 @@
+tasks:
+  - init: yarn install # runs during prebuild
+    command: yarn dev
 
-# vscode:
-#   extensions:
-#     - silvenon.mdx
+ports:
+  - port: 3000
+    onOpen: open-browser
+    visibility: public
